@@ -59,6 +59,10 @@ nav h2:hover {
     bottom: -2vh;
 }
 
+.hidden {
+    display: none;
+}
+
 #line-break {
     height: 2px;
     width: 100vw;
