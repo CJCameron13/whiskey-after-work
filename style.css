@@ -57,6 +57,17 @@ nav h2:hover {
     height: 3px;
     background-color: var(--space-cadet);
     bottom: -2vh;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes slide-in {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .hidden {
