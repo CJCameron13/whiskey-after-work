@@ -116,6 +116,14 @@ nav h2:hover {
     padding-bottom: 4%;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: initial;
+}
+
 #post-one {
     background-image: url('/images/josh-collesano-coTTvjild6U-unsplash.jpg');
     background-size: 100%;
