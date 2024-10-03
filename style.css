@@ -87,6 +87,20 @@ nav h2:hover {
     align-items: center;
     justify-content: center;
     height: 80vh;
+    position: relative;
+}
+
+#previous-arrow {
+    position: absolute;
+    rotate: 180deg;
+    left: 2vw;
+    top: 50%;
+}
+
+#next-arrow {
+    position: absolute;
+    right: 2vw;
+    top: 50%;
 }
 
 .post-container {
