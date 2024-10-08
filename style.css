@@ -178,7 +178,14 @@ img {
 
 .blog-image h1 {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     color: white;
     font-size: 3rem;
+}
+
+.blog-image h2 {
+    position: absolute;
+    bottom: 3%;
+    color: white;
+    font-size: 2rem;
 }
