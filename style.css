@@ -12,10 +12,15 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     padding-top: 1rem;
-    overflow: hidden;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 header {
@@ -25,6 +30,7 @@ header {
     padding-right: 2rem;
     padding-left: 2rem;
     margin-bottom: 2vh;
+    height: 8vh;
 }
 
 header h1 {
@@ -87,7 +93,7 @@ nav h2:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100%;
     position: relative;
 }
 
@@ -98,10 +104,11 @@ nav h2:hover {
     top: 50%;
 }
 
-#next-arrow {
+#next-arrow-container {
     position: absolute;
-    right: 2vw;
-    top: 50%;
+    right: 0;
+    background-color: var(--dutch-white);
+    height: 100%;
 }
 
 .post-container {
