@@ -18,7 +18,6 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    padding-top: 1rem;
     overflow-x: hidden;
     height: 100%;
 }
@@ -93,7 +92,7 @@ nav h2:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: calc(100% - 10vh);
     position: relative;
 }
 
@@ -126,7 +125,7 @@ nav h2:hover {
 
 .post-container.next-up {
     position: absolute;
-    top: 12.5vh;
+    top: 17.5vh;
     left: 90vw;
     opacity: 50%;
 }
