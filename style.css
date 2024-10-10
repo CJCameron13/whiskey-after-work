@@ -106,8 +106,17 @@ nav h2:hover {
 #next-arrow-container {
     position: absolute;
     right: 0;
-    background-color: var(--dutch-white);
     height: 100%;
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#next-arrow-container:hover {
+    background-color: var(--dutch-white);
+    opacity: 50%;
+    cursor: pointer;
 }
 
 .post-container {
