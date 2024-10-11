@@ -119,7 +119,7 @@ nav h2:hover {
     cursor: pointer;
 }
 
-.post-container {
+.post-container.active {
     width: 60vw;
     height: 55vh;
     display: flex;
@@ -134,9 +134,23 @@ nav h2:hover {
 
 .post-container.next-up {
     position: absolute;
+    width: 60vw;
+    height: 55vh;
     top: 17.5vh;
     left: 90vw;
     opacity: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}
+
+.post-container.hidden {
+    display: none;
 }
 
 a {
