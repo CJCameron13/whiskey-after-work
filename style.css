@@ -129,6 +129,7 @@ nav h2:hover {
     width: 100%;
     background-color: var(--dutch-white);
     position: relative;
+    border-radius: 4px;
 }
 
 #scrollbar-thumb {
@@ -136,6 +137,17 @@ nav h2:hover {
     height: 100%;
     width: 50%;
     background-color: var(--space-cadet);
+    border-radius: inherit;
+    cursor: grab;
+}
+
+#scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
 }
 
 #previous-arrow {
