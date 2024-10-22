@@ -132,6 +132,10 @@ nav h2:hover {
     border-radius: 4px;
 }
 
+#slider-scrollbar:hover #scrollbar-track {
+    height: 0.2rem;
+}
+
 #scrollbar-thumb {
     position: absolute;
     height: 100%;
@@ -139,6 +143,11 @@ nav h2:hover {
     background-color: var(--space-cadet);
     border-radius: inherit;
     cursor: grab;
+}
+
+#scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 0.25rem;
 }
 
 #scrollbar-thumb::after {
