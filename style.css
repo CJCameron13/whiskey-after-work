@@ -1,5 +1,6 @@
 :root {
     --dutch-white: #DCCCA3;
+    --lite-dutch-white: #d9ceb4;
     --dim-gray: #7D6D61;
     --walnut-brown: #5E574D;
     --oxford-blue: #020122;
@@ -100,20 +101,49 @@ nav h2:hover {
 #wrapper {
     position: relative;
     width: 95vw;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     /* justify-content: center; */
-    overflow-x: scroll;
 }
 
 #wrapper::-webkit-scrollbar {
     display: none;
 }
 
+.slide-button {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: var(--oxford-blue);
+    opacity: 90%;
+    border: none;
+    outline: none;
+    background: var(--dutch-white);
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%); /*pushes up to center*/
+}
+
+.slide-button:hover {
+    background: var(--lite-dutch-white);
+}
+
+#prev-slide {
+    left: -20px;
+    display: none;
+}
+
+#next-slide {
+    right: -20px;
+}
+
 #post-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    overflow-x: auto;
 }
 
 #slider-scrollbar {
@@ -182,7 +212,7 @@ nav h2:hover {
     cursor: pointer;
 }
 
-.post-container.active {
+.post-container {
     width: 60vw;
     height: 55vh;
     display: flex;
@@ -193,10 +223,11 @@ nav h2:hover {
     color: white;
     padding-top: 1%;
     padding-bottom: 4%;
+    background-size: 100%;
 }
 
-.post-container.next-up {
-    /* position: absolute; */
+/* .post-container.next-up {
+    position: absolute;
     width: 60vw;
     height: 55vh;
     top: 17.5vh;
@@ -210,7 +241,7 @@ nav h2:hover {
     color: white;
     padding-top: 1%;
     padding-bottom: 4%;
-}
+} */
 
 .post-container.hidden {
     display: none;
@@ -226,12 +257,14 @@ a:visited {
 
 #made-from-scratch {
     background-image: url('/images/josh-collesano-coTTvjild6U-unsplash.jpg');
-    background-size: 100%;
 }
 
 #the-first-tasting {
     background-image: url('/images/first-tasting.JPG');
-    background-size: 100%;
+}
+
+#woodford {
+    background-image: url('images/IMG_2358.JPG');
 }
 
 img {
