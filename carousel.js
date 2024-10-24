@@ -1,7 +1,25 @@
 const initSlider = () => {
     const slideButtons = document.querySelectorAll('.slide-button')
     const imageList = document.querySelector('#post-list')
+    const sliderScrollbar = document.querySelector('#slider-scrollbar')
+    const scrollbarThumb = document.querySelector('#scrollbar-thumb')
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth
+
+    //Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener('mousedown', (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft
+
+        //Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX
+            const newThumbPosition = thumbPosition + deltaX
+            scrollbarThumb.style.left = `${newThumbPosition}px`
+        }
+
+        //Add event listeners for drag interaction
+        document.addEventListener('mousemove', handleMouseMove)
+    })
 
     slideButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -18,8 +36,16 @@ const initSlider = () => {
         slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? 'none' : 'block'
     }
 
+    //Update scrollbar thumb position based on image scroll
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth)
+        scrollbarThumb.style.left = `${thumbPosition}px`
+    }
+
     imageList.addEventListener('scroll', () => {
         handleSlideButtons();
+        updateScrollThumbPosition()
     })
 }
 
