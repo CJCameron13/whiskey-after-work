@@ -141,7 +141,7 @@ nav h2:hover {
 
 #post-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     overflow-x: auto;
 }
@@ -272,6 +272,10 @@ a {
 
 a:visited {
     color: initial;
+}
+
+#hunter-and-scott {
+    background-image: url('/images/Hunter-and-scott.jpg');
 }
 
 #made-from-scratch {
