@@ -101,9 +101,6 @@ nav h2:hover {
 #wrapper {
     position: relative;
     width: 95vw;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 #wrapper::-webkit-scrollbar {
@@ -141,6 +138,7 @@ nav h2:hover {
 
 #post-list {
     display: grid;
+    /* Update after each post addition*/
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     overflow-x: auto;
@@ -149,7 +147,6 @@ nav h2:hover {
 #slider-scrollbar {
     height: 1rem;
     width: 95%;
-    /* background-color: var(--space-cadet); */
     display: flex;
     align-items: center;
 }
@@ -212,7 +209,7 @@ nav h2:hover {
     cursor: pointer;
 }
 
-/* Styles for mobile and tablets */
+/* Carousel styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
     .slider-wrapper .slide-button {
       display: none !important;
@@ -230,6 +227,7 @@ nav h2:hover {
       width: 20%;
     }
   }
+  /*End carousel styles for mobile and tablet*/
 
 .post-container {
     width: 60vw;
@@ -244,23 +242,6 @@ nav h2:hover {
     padding-bottom: 4%;
     background-size: 100%;
 }
-
-/* .post-container.next-up {
-    position: absolute;
-    width: 60vw;
-    height: 55vh;
-    top: 17.5vh;
-    left: 90vw;
-    opacity: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
-    color: white;
-    padding-top: 1%;
-    padding-bottom: 4%;
-} */
 
 .post-container.hidden {
     display: none;
