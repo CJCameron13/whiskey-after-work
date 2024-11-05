@@ -1,0 +1,29 @@
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.whiskey-notes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wn-text {
+    width: 80%;
+}
+
+.wn-text h2 {
+    margin-bottom: 2rem;
+}
+
+.thumbnail {
+    width: 166px;
+    height: 250px;   
+}
+
+#crown-rye {
+    object-fit: cover;
+}
