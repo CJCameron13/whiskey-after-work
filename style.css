@@ -144,6 +144,10 @@ nav h2:hover {
     overflow-x: auto;
 }
 
+#post-list::-webkit-scrollbar {
+    display: none;
+}
+
 #slider-scrollbar {
     height: 1rem;
     width: 95%;
@@ -241,6 +245,7 @@ nav h2:hover {
     padding-top: 1%;
     padding-bottom: 4%;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .post-container.hidden {
@@ -257,6 +262,7 @@ a:visited {
 
 #hunter-and-scott {
     background-image: url('/images/Hunter-and-scott.jpg');
+    background-position: center;
 }
 
 #made-from-scratch {
@@ -265,6 +271,7 @@ a:visited {
 
 #the-first-tasting {
     background-image: url('/images/first-tasting.JPG');
+    background-position: center;
 }
 
 #woodford {
