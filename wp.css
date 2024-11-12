@@ -1,3 +1,13 @@
+:root {
+    --dutch-white: #DCCCA3;
+    --lite-dutch-white: #d9ceb4;
+    --dim-gray: #7D6D61;
+    --walnut-brown: #5E574D;
+    --oxford-blue: #020122;
+    --space-cadet: #1A1B41;
+    --lite-grey: #f5f2eb;
+}
+
 .type-selector {
     margin-top: 5vh;
     display: flex;
@@ -7,4 +17,51 @@
     align-items: center;
     background: url('/images/adam-wilson-6UIonphZA5o-unsplash-min.jpg');
     color: white;
+}
+
+.list-container {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.column-mid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: var(--lite-dutch-white); */
+    width: 25vw;
+    border-radius: 5px;
+}
+
+.card h2 {
+    width: 75%;
+}
+
+.card:hover {
+    background-color: var(--lite-grey);
+}
+
+.thumbnail {
+    height: 150px;
+    width: 100px;
+}
+
+.highlight-image {
+    width: 500px;
+    height: 700px;
 }
