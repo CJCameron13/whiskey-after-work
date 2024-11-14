@@ -6,6 +6,7 @@
     --oxford-blue: #020122;
     --space-cadet: #1A1B41;
     --lite-grey: #f5f2eb;
+    --lite-grey-transparent: #f5f2eb80;
 }
 
 .type-selector {
@@ -19,6 +20,24 @@
     color: white;
 }
 
+.type {
+    height: 4rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.type:hover {
+    cursor: pointer;
+    background-color: var(--lite-grey-transparent);
+}
+
+.type.active {
+    background-color: var(--lite-grey-transparent);
+}
+
 .list-container {
     margin-top: 5vh;
     display: flex;
@@ -27,7 +46,7 @@
     padding-right: 5vw;
 }
 
-.bourbon {
+.hidden {
     display: none;
 }
 
