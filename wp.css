@@ -91,4 +91,7 @@
 .highlight-image {
     width: 500px;
     height: 700px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
 }
