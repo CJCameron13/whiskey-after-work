@@ -7,7 +7,7 @@ navContainer.forEach((item) => {
         const hoverLine = item.querySelector('.hover-line'); 
 
         // Remove the 'hidden' class from the found hover-line
-        hoverLine.classList.remove('hidden'); 
+        hoverLine.classList.remove('off'); 
     });
 });
 
@@ -16,6 +16,6 @@ navContainer.forEach((item) => {
         const hoverLine = item.querySelector('.hover-line'); 
 
         // Add the 'hidden' class from the found hover-line
-        hoverLine.classList.add('hidden'); 
+        hoverLine.classList.add('off'); 
     });
 });
