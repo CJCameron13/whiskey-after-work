@@ -78,9 +78,9 @@ nav h2:hover {
     }
 }
 
-/* .hidden {
+.off {
     display: none;
-} */
+} 
 
 #line-break {
     height: 2px;
