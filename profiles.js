@@ -36,11 +36,19 @@ typeButtonContainer.addEventListener('click', (event) => {
 const whiskeyCards = document.querySelectorAll('.card')
 const listContainer = document.querySelectorAll('.list-container')
 const highlightImagesBourbon = document.querySelectorAll('.highlight-image.bourbon')
+const highlightImagesScotch = document.querySelectorAll('.highlight-image.scotch')
+const highlightImagesRye = document.querySelectorAll('.highlight-image.rye')
 
 const angelsEnvyStraightHighlight = document.querySelector('#angels-envy-straight-highlight')
 const fourRosesSmallBatch = document.querySelector('#four-roses-small-batch-highlight')
 const elijahCraigSmallBatch = document.querySelector('#elijah-craig-small-batch-highlight')
 const hunterAndScottBourbon = document.querySelector('#hunter-and-scott-bourbon-highlight')
+
+const johnnieRedLabel = document.querySelector('#johnnie-red-highlight')
+const dewarsWhiteLabel = document.querySelector('#dewars-white-highlight')
+
+const crownRoyalRye = document.querySelector('#crown-rye-highlight')
+const highWestDoubleRye = document.querySelector('#high-west-double-rye-highlight')
 
 listContainer.forEach((container) => {
   container.addEventListener('click', (event) => {
@@ -82,6 +90,28 @@ listContainer.forEach((container) => {
         card.classList.remove('selected')
       })
       chosen.classList.add('selected')
-    }
+    } //Scotch
+      else if (chosen.classList.contains('johnnie-red-label')) {
+        highlightImagesScotch.forEach((highlight) => {
+          highlight.classList.add('hidden')
+        })
+        johnnieRedLabel.classList.remove('hidden')
+      } else if (chosen.classList.contains('dewars-white-label')) {
+        highlightImagesScotch.forEach((highlight) => {
+          highlight.classList.add('hidden')
+        })
+        dewarsWhiteLabel.classList.remove('hidden')
+      } //Ryes
+      else if (chosen.classList.contains('crown-royal-rye')) {
+        highlightImagesRye.forEach((highlight) => {
+          highlight.classList.add('hidden')
+        })
+        crownRoyalRye.classList.remove('hidden')
+      } else if (chosen.classList.contains('high-west-double-rye')) {
+        highlightImagesRye.forEach((highlight) => {
+          highlight.classList.add('hidden')
+        })
+        highWestDoubleRye.classList.remove('hidden')
+      }
   })
 })
