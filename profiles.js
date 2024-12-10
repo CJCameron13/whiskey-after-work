@@ -49,23 +49,39 @@ listContainer.forEach((container) => {
       highlightImagesBourbon.forEach((highlight) => {
         highlight.classList.add('hidden')
       });
-      console.log(angelsEnvyStraightHighlight)
-      angelsEnvyStraightHighlight.classList.remove('hidden')
+      angelsEnvyStraightHighlight.classList.remove('hidden');
+      //For card highlighting effect
+      whiskeyCards.forEach((card) => {
+        card.classList.remove('selected')
+      })
+      chosen.classList.add('selected')
     } else if (chosen.classList.contains('four-roses-small-batch')) {
       highlightImagesBourbon.forEach((highlight) => {
         highlight.classList.add('hidden')
       });
-      fourRosesSmallBatch.classList.remove('hidden')
+      fourRosesSmallBatch.classList.remove('hidden');
+      whiskeyCards.forEach((card) => {
+        card.classList.remove('selected')
+      })
+      chosen.classList.add('selected')
     } else if (chosen.classList.contains('elijah-craig-small-batch')) {
       highlightImagesBourbon.forEach((highlight) => {
         highlight.classList.add('hidden')
       });
-      elijahCraigSmallBatch.classList.remove('hidden')
+      elijahCraigSmallBatch.classList.remove('hidden');
+      whiskeyCards.forEach((card) => {
+        card.classList.remove('selected')
+      })
+      chosen.classList.add('selected')
     } else if (chosen.classList.contains('hunter-and-scott-bourbon')) {
       highlightImagesBourbon.forEach((highlight) => {
         highlight.classList.add('hidden')
       });
-      hunterAndScottBourbon.classList.remove('hidden')
+      hunterAndScottBourbon.classList.remove('hidden');
+      whiskeyCards.forEach((card) => {
+        card.classList.remove('selected')
+      })
+      chosen.classList.add('selected')
     }
   })
 })
