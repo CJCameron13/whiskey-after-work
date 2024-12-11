@@ -96,22 +96,38 @@ listContainer.forEach((container) => {
           highlight.classList.add('hidden')
         })
         johnnieRedLabel.classList.remove('hidden')
+        whiskeyCards.forEach((card) => {
+          card.classList.remove('selected')
+        })
+        chosen.classList.add('selected')
       } else if (chosen.classList.contains('dewars-white-label')) {
         highlightImagesScotch.forEach((highlight) => {
           highlight.classList.add('hidden')
         })
         dewarsWhiteLabel.classList.remove('hidden')
+        whiskeyCards.forEach((card) => {
+          card.classList.remove('selected')
+        })
+        chosen.classList.add('selected')
       } //Ryes
       else if (chosen.classList.contains('crown-royal-rye')) {
         highlightImagesRye.forEach((highlight) => {
           highlight.classList.add('hidden')
         })
         crownRoyalRye.classList.remove('hidden')
+        whiskeyCards.forEach((card) => {
+          card.classList.remove('selected')
+        })
+        chosen.classList.add('selected')
       } else if (chosen.classList.contains('high-west-double-rye')) {
         highlightImagesRye.forEach((highlight) => {
           highlight.classList.add('hidden')
         })
         highWestDoubleRye.classList.remove('hidden')
+        whiskeyCards.forEach((card) => {
+          card.classList.remove('selected')
+        })
+        chosen.classList.add('selected')
       }
   })
 })
